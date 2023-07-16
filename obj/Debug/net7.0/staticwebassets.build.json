@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eOAym/zKb2eYB0qMmjzoSvZJeIUc6siMu+5XZN7k6pg=",
+  "Hash": "+QJB0vkO25y3y1Hm0lZCEXYqLKUptaDf+1iSAlzk2d4=",
   "Source": "TodoApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -797,6 +797,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\caoqu\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.9\\build\\net7.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "TodoApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\caoqu\\.nuget\\packages\\blazored.localstorage\\4.3.0\\lib\\net7.0\\Blazored.LocalStorage.dll"
     },
     {
       "Identity": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.9.jrznhd4la4.js",
@@ -4792,6 +4809,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.FileSystem.Watcher.dll"
+    },
+    {
+      "Identity": "D:\\Development\\TodoApp\\obj\\Debug\\net7.0\\build-gz\\7otQ3pje.gz",
+      "SourceId": "TodoApp",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\TodoApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
     },
     {
       "Identity": "D:\\Development\\TodoApp\\obj\\Debug\\net7.0\\build-gz\\8BjLrY8b.gz",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "n17MgUXd7qxruA4p9g70wlYNZzZ/Uuc1ELBi+MYLb8HtgelgS7VoFwSMYDsU45Zt4xGa0Bw6tvwJESvh00JF+g==",
+  "dgSpecHash": "3lTCXVFjZBjNfya+sURfgVSv3aC9cvsGaKq2UzoNQtFhftngkzni3sHGAm+52OoJzCDA1Jgv1GTNOWuG0Yx+JA==",
   "success": true,
   "projectFilePath": "D:\\Development\\TodoApp\\TodoApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\caoqu\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\caoqu\\.nuget\\packages\\bootstrap\\5.3.0\\bootstrap.5.3.0.nupkg.sha512",
     "C:\\Users\\caoqu\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.9\\microsoft.aspnetcore.authorization.7.0.9.nupkg.sha512",
     "C:\\Users\\caoqu\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.9\\microsoft.aspnetcore.components.7.0.9.nupkg.sha512",

@@ -1,30 +1,40 @@
-﻿@page "/todolist"
+﻿@using Blazored.LocalStorage
+
+@page "/todolist"
+
+@inject ILocalStorageService localStorage
 
 <h3>Todo List</h3>
+    <ul class="list-group">
+        @foreach (var todoItem in todoItems)
+        {
+            <li class="list-group-item">
+                <div>
+                    @todoItem
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm me-2" @onclick="() => EditTodo(todoItem)">Edit</button>
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteTodo(todoItem)">Delete</button>
+                </div>
+            </li>
+        }
+    </ul>
 
-<ul class="list-group">
-    @foreach (var todoItem in todoItems)
-    {
-        <li class="list-group-item">
-            <div>
-                @todoItem
-            </div>
-            <div>
-                <button class ="btn btn-primary btn-sm me-2" @onclick="() => EditTodo(todoItem)">Edit</button>
-                <button class="btn btn-danger btn-sm" @onclick="() => DeleteTodo(todoItem)">Delete</button>
-            </div>
-        </li>
-    }
-</ul>
-
-<input class="form-control mt-2" @bind="newTodoItem" />
-
-<button class="btn btn-primary mt-2" @onclick="AddTodo">Add</button>
+<form @onsubmit="AddTodo">
+    <input class="form-control mt-2" @bind="newTodoItem" />
+    <button type="submit" class="btn btn-primary mt-2" @onclick="AddTodo">Add</button>
+</form>
 
 @code {
     List<string> todoItems = new List<string>();
     string newTodoItem;
     string editedTodoItem;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        todoItems = await localStorage.GetItemAsync<List<string>>("todoItems") ?? new List<string>();
+    }
 
     void AddTodo()
     {
@@ -32,7 +42,13 @@
         {
             todoItems.Add(newTodoItem);
             newTodoItem = string.Empty;
+            SaveTodoItems();
         }
+    }
+
+    void SaveTodoItems()
+    {
+        localStorage.SetItemAsync("todoItems", todoItems);
     }
 
     void EditTodo(string todoItem)

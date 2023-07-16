@@ -826,3 +826,7 @@ D:\Development\TodoApp\obj\Debug\net7.0\TodoApp.dll
 D:\Development\TodoApp\obj\Debug\net7.0\refint\TodoApp.dll
 D:\Development\TodoApp\obj\Debug\net7.0\TodoApp.pdb
 D:\Development\TodoApp\obj\Debug\net7.0\ref\TodoApp.dll
+D:\Development\TodoApp\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll
+D:\Development\TodoApp\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+D:\Development\TodoApp\bin\Debug\net7.0\Blazored.LocalStorage.dll
+D:\Development\TodoApp\obj\Debug\net7.0\build-gz\7otQ3pje.gz
