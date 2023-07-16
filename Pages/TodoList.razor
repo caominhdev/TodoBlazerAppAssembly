@@ -1,0 +1,57 @@
+﻿@page "/todolist"
+
+<h3>Todo List</h3>
+
+<ul class="list-group">
+    @foreach (var todoItem in todoItems)
+    {
+        <li class="list-group-item">
+            <div>
+                @todoItem
+            </div>
+            <div>
+                <button class ="btn btn-primary btn-sm me-2" @onclick="() => EditTodo(todoItem)">Edit</button>
+                <button class="btn btn-danger btn-sm" @onclick="() => DeleteTodo(todoItem)">Delete</button>
+            </div>
+        </li>
+    }
+</ul>
+
+<input class="form-control mt-2" @bind="newTodoItem" />
+
+<button class="btn btn-primary mt-2" @onclick="AddTodo">Add</button>
+
+@code {
+    List<string> todoItems = new List<string>();
+    string newTodoItem;
+    string editedTodoItem;
+
+    void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodoItem))
+        {
+            todoItems.Add(newTodoItem);
+            newTodoItem = string.Empty;
+        }
+    }
+
+    void EditTodo(string todoItem)
+    {
+        editedTodoItem = todoItem;
+        newTodoItem = todoItem;
+        todoItems.Remove(todoItem);
+    }
+    void UpdateTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(editedTodoItem))
+        {
+            todoItems.Add(editedTodoItem);
+            newTodoItem = string.Empty;
+            editedTodoItem = string.Empty;
+        }
+    }
+    void DeleteTodo (string todoItem)
+    {
+        todoItems.Remove(todoItem);
+    }
+}
