@@ -1,0 +1,17 @@
+﻿# Visual Studio / Rider / VS Code files and folders
+.vs/
+.vscode/
+.idea/
+
+# Build output
+/bin/
+/obj/
+
+# NuGet packages
+*.nupkg
+/packages/
+
+# User-specific files
+*.suo
+*.user
+*.userprefs
